@@ -1,0 +1,133 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+:root {
+    --Grey-500: hsl(215, 22%, 17%);
+    --Grey-900: hsl(206, 27%, 12%);
+    --Grey-950: hsl(216, 12%, 8%);
+    --Orange-500: hsl(25, 97%, 53%);
+    --font-family: 'Courier New', Courier, monospace;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--Grey-950);
+    margin: 0;
+    padding: 0
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--Grey-900);
+    border-radius: 25px;
+    padding: 40px;
+    width: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--Grey-500);
+    width: 40px;
+    height: 40px;
+}
+
+h1{
+    color: white;
+    font-weight: 700;
+}
+
+p {
+    color: rgb(162, 161, 161);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating__button{
+    background-color: var(--Grey-500);
+    border: none;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.rating__button:hover {
+    background-color: var(--Orange-500);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit__button {
+    background-color: var(--Orange-500);
+    border: none;
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.submit__button:hover {
+    background-color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        padding: 20px;
+    }
+    .rating__button {
+        width: 35px;
+        height: 35px;
+    }
+    .submit__button {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
