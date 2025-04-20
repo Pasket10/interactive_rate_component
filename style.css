@@ -158,5 +158,10 @@ p {
         padding: 10px;
         font-size: 12px;
     }
+
+    .active {
+        background-color: white;
+        color: black;
+    }
 }
 
