@@ -73,20 +73,23 @@ p {
     border: none;
     color: white;
     padding: 10px;
+    margin: 10px 0;
     justify-content: center;
+    align-items: center;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 15px;
+    font-weight: 400;
 }
 
 .rating__button:hover {
     background-color: var(--Orange-500);
+    color: black;
 }
 
 .submit {
@@ -116,6 +119,31 @@ p {
     background-color: white;
 }
 
+.active {
+    background-color: white;
+    color: black;
+}
+
+
+.thank-you-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thank-you__message {
+    background-color: var(--Grey-500);
+    color: var(--Orange-500);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.thank-you__description {
+    display: flex;
+    text-align: center;
+}
+
 /* Responsive layout */
 @media (max-width: 768px) {
     .card {
@@ -123,11 +151,12 @@ p {
         padding: 20px;
     }
     .rating__button {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 20px;
     }
     .submit__button {
         padding: 10px;
         font-size: 12px;
     }
 }
+
